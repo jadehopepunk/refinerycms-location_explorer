@@ -1,10 +1,10 @@
 require 'refinerycms-core'
 
 module Refinery
-  autoload :LocationsGenerator, 'generators/refinery/locations_generator'
+  autoload :LocationsGenerator, 'generators/refinery/location_explorer_generator'
 
-  module Locations
-    require 'refinery/locations/engine'
+  module LocationExplorer
+    require 'refinery/location_explorer/engine'
 
     class << self
       attr_writer :root
@@ -17,6 +17,6 @@ module Refinery
         @factory_paths ||= [ root.join('spec', 'factories').to_s ]
       end
     end
-    require 'refinery/locations/configuration'
+    require 'refinery/location_explorer/configuration'
   end
 end

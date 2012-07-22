@@ -3,8 +3,8 @@
   
   if defined?(Refinery::User)
     Refinery::User.all.each do |user|
-      if user.plugins.where(:name => 'refinerycms-locations').blank?
-        user.plugins.create(:name => 'refinerycms-locations',
+      if user.plugins.where(:name => 'refinerycms-location_explorer').blank?
+        user.plugins.create(:name => 'refinerycms-location_explorer',
                             :position => (user.plugins.maximum(:position) || -1) +1)
       end
     end

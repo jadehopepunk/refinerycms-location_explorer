@@ -1,5 +1,5 @@
 module Refinery
-  module Locations
+  module LocationExplorer
     include ActiveSupport::Configurable
 
     config_accessor :map_center, :map_zoom

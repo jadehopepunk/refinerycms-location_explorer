@@ -1,5 +1,5 @@
 module Refinery
-  module Locations
+  module LocationExplorer
     class LocationsController < ::ApplicationController
 
       before_filter :find_all_locations

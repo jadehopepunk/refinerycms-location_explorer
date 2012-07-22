@@ -1,1 +1,1 @@
-require 'refinery/locations'
+require 'refinery/location_explorer'

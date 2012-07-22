@@ -1,5 +1,5 @@
 module Refinery
-  module Locations
+  module LocationExplorer
     module Admin
       class LocationsController < ::Refinery::AdminController
 

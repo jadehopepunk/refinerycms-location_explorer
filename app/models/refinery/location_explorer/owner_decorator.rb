@@ -1,5 +1,5 @@
 module Refinery
-  module Locations
+  module LocationExplorer
     class OwnerDecorator
       def self.use_owner_attribute(*keys)
         keys.each do |key|

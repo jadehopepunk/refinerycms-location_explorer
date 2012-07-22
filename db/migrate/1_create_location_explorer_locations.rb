@@ -1,4 +1,4 @@
-class CreateLocationsLocations < ActiveRecord::Migration
+class CreateLocationExplorerLocations < ActiveRecord::Migration
 
   def up
     create_table :refinery_locations do |t|
@@ -19,11 +19,11 @@ class CreateLocationsLocations < ActiveRecord::Migration
 
   def down
     if defined?(::Refinery::UserPlugin)
-      ::Refinery::UserPlugin.destroy_all({:name => "refinerycms-locations"})
+      ::Refinery::UserPlugin.destroy_all({:name => "refinerycms-location_explorer"})
     end
 
     if defined?(::Refinery::Page)
-      ::Refinery::Page.delete_all({:link_url => "/locations/locations"})
+      ::Refinery::Page.delete_all({:link_url => "/location_explorer/locations"})
     end
 
     drop_table :refinery_locations

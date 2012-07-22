@@ -1,5 +1,5 @@
 module Refinery
-  module Locations
+  module LocationExplorer
     class Location < Refinery::Core::BaseModel
       self.table_name = 'refinery_locations'
 

@@ -36,7 +36,7 @@ module Refinery
       end
 
       def find_page
-        @page = ::Refinery::Page.where(:link_url => "/locations").first
+        @page = ::Refinery::Page.where(:link_url => "/location_explorer").first
       end
 
     end

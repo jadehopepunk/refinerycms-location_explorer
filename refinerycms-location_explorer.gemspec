@@ -16,7 +16,7 @@ Gem::Specification.new do |s|
   # Runtime dependencies
   s.add_dependency             'refinerycms-core',           '~> 2.0.5'
   s.add_dependency             'refinerycms-page-images',    '~> 2.0.0'
-  s.add_dependency             'refinerycms-jquery_gallery', '~> 1.0'
+  s.add_dependency             'refinerycms-jquery_gallery', '~> 1.0.1'
   s.add_dependency             'refinerycms-formtastic',     '~> 1.0.2'
   s.add_dependency             'haml-rails'
 

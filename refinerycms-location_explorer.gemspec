@@ -4,7 +4,7 @@ Gem::Specification.new do |s|
   s.platform          = Gem::Platform::RUBY
   s.homepage          = 'https://github.com/craigambrose/refinerycms-location_explorer'
   s.name              = 'refinerycms-location_explorer'
-  s.version           = '1.0'
+  s.version           = '1.0.1'
   s.description       = 'Ruby on Rails Locations extension for Refinery CMS'
   s.date              = '2012-06-23'
   s.summary           = 'Locations extension for Refinery CMS'

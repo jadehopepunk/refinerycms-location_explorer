@@ -33,6 +33,9 @@ Add the stylesheet to your application.css
 //= require refinery/locations
 ```
 
+Note that this gem depends on refinerycms-page-images which requires you to run it's generator to install it.
+Please see the instructions for that gem to ensure that it is installed correctly.
+
 ## How to build this extension as a gem
 
     gem build refinerycms-locations.gemspec

@@ -12,13 +12,30 @@ to each location.
 The refinerycms-jquery_gallery extension is used to display the image gallery (using the jQuery gallery view
 widget).
 
+## Installation
+
+Add the gem to your Gemfile:
+
+```ruby
+gem 'refinerycms-locations'
+```
+
+Run the generator and then execute the migrations:
+
+```bash
+rake refinery:locations
+rake db:migrate
+```
+
+Add the stylesheet to your application.css
+
+```
+//= require refinery/locations
+```
+
 ## How to build this extension as a gem
 
-    cd vendor/extensions/locations
     gem build refinerycms-locations.gemspec
-    gem install refinerycms-locations.gem
-
-    # Sign up for a http://rubygems.org/ account and publish the gem
     gem push refinerycms-locations.gem
 
 ## Licence

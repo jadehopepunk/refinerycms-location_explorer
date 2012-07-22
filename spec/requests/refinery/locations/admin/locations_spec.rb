@@ -14,7 +14,7 @@ describe Refinery do
           end
 
           it "shows two items" do
-            visit refinery.locations_admin_locations_path
+            visit refinery.location_explorer_admin_locations_path
             page.should have_content("UniqueTitleOne")
             page.should have_content("UniqueTitleTwo")
           end
@@ -22,7 +22,7 @@ describe Refinery do
 
         describe "create" do
           before(:each) do
-            visit refinery.locations_admin_locations_path
+            visit refinery.location_explorer_admin_locations_path
 
             click_link "Add New Location"
           end
@@ -33,7 +33,7 @@ describe Refinery do
               click_button "Save"
 
               page.should have_content("'This is a test of the first string field' was successfully added.")
-              Refinery::Locations::Location.count.should == 1
+              Refinery::LocationExplorer::Location.count.should == 1
             end
           end
 
@@ -42,7 +42,7 @@ describe Refinery do
               click_button "Save"
 
               page.should have_content("Name can't be blank")
-              Refinery::Locations::Location.count.should == 0
+              Refinery::LocationExplorer::Location.count.should == 0
             end
           end
 
@@ -50,7 +50,7 @@ describe Refinery do
             before(:each) { FactoryGirl.create(:location, :name => "UniqueTitle") }
 
             it "should fail" do
-              visit refinery.locations_admin_locations_path
+              visit refinery.location_explorer_admin_locations_path
 
               click_link "Add New Location"
 
@@ -58,7 +58,7 @@ describe Refinery do
               click_button "Save"
 
               page.should have_content("There were problems")
-              Refinery::Locations::Location.count.should == 1
+              Refinery::LocationExplorer::Location.count.should == 1
             end
           end
 
@@ -68,7 +68,7 @@ describe Refinery do
           before(:each) { FactoryGirl.create(:location, :name => "A name") }
 
           it "should succeed" do
-            visit refinery.locations_admin_locations_path
+            visit refinery.location_explorer_admin_locations_path
 
             within ".actions" do
               click_link "Edit this location"
@@ -86,12 +86,12 @@ describe Refinery do
           before(:each) { FactoryGirl.create(:location, :name => "UniqueTitleOne") }
 
           it "should succeed" do
-            visit refinery.locations_admin_locations_path
+            visit refinery.location_explorer_admin_locations_path
 
             click_link "Remove this location forever"
 
             page.should have_content("'UniqueTitleOne' was successfully removed.")
-            Refinery::Locations::Location.count.should == 0
+            Refinery::LocationExplorer::Location.count.should == 0
           end
         end
 

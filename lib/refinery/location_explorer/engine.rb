@@ -8,11 +8,11 @@ module Refinery
 
       initializer "register refinerycms_location_explorer plugin" do
         Refinery::Plugin.register do |plugin|
-          plugin.name = "locations"
+          plugin.name = "location_explorer"
           plugin.url = proc { Refinery::Core::Engine.routes.url_helpers.location_explorer_admin_locations_path }
           plugin.pathname = root
           plugin.activity = {
-            :class_name => :'refinery/location_explorer/location',
+            :class_name => :'refinery/location_explorer/admin/location',
             :title => 'name'
           }
           

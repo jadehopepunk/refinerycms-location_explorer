@@ -1,4 +1,4 @@
-<%= semantic_form_for [refinery, :locations_admin, @location] do |f| -%>
+<%= semantic_form_for [refinery, :location_explorer_admin, @location] do |f| -%>
   <%= render '/refinery/admin/error_messages',
               :object => @location,
               :include_object_name => true %>
@@ -8,7 +8,7 @@
   <% end %>
 
   <%= tabbed_fieldsets f, [
-    Refinery::Pages::Tab.new(:name => 'map', :partial => '/refinery/locations/admin/locations/map'),
+    Refinery::Pages::Tab.new(:name => 'map', :partial => '/refinery/location_explorer/admin/locations/map'),
     :description,
     Refinery::Pages::Tab.new(:name => 'images', :partial => '/refinery/admin/pages/tabs/images')
   ] %>

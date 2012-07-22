@@ -1,9 +1,9 @@
 en:
   refinery:
     plugins:
-      locations:
+      location_explorer:
         title: Locations
-    locations:
+    location_explorer:
       admin:
         locations:
           actions:
@@ -23,7 +23,7 @@ en:
           other: Other Locations
   activerecord:
     attributes:
-      'refinery/locations/location':
+      'refinery/location_explorer/location':
         name: Name
         description: Description
         latitude: Latitude

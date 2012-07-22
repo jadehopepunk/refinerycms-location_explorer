@@ -22,7 +22,7 @@
     $(document).ready(function(){
       var map_picker = new Application.MapPicker(
         '#map-picker',
-        <%= Refinery::Locations.config.map_center.to_json.html_safe %>,
+        <%= Refinery::LocationExplorer.config.map_center.to_json.html_safe %>,
         <%= f.object.latlng.to_json.html_safe %>);
     });
   </script>

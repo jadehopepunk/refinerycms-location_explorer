@@ -34,7 +34,7 @@ module Refinery
       end
 
       def detail_url
-        "/locations/#{to_param}"
+        "/location_explorer/#{to_param}"
       end
     end
   end

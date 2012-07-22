@@ -1,0 +1,26 @@
+#map-picker {
+  height: 400px;
+  width: 600px;
+  border: 1px solid #666;
+  margin: 0 10px 5px 0;
+  float: left;
+}
+
+.formtastic {
+  .page_part aside {
+    width: 335px;
+    margin-left: 610px;
+
+    fieldset {
+      width: 335px;
+
+      ol {
+        width: 335px;
+
+        input {
+          width: 98%;
+        }
+      }
+    }
+  }
+}

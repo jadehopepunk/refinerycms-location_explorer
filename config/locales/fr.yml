@@ -1,0 +1,30 @@
+fr:
+  refinery:
+    plugins:
+      locations:
+        title: Locations
+    locations:
+      admin:
+        locations:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Location
+            reorder: Réordonner les Locations
+            reorder_done: Fin de réordonnancement des Locations
+          records:
+            title: Locations
+            sorry_no_results: "Désolé ! Aucun résultat."
+            no_items_yet: 'Il n''y a actuellement aucun(e) Location. Cliquer sur "Créer un(e) nouve(au/l/lle) Location" pour créer votre premi(er/ère) location.'
+          location:
+            view_live_html: Voir ce(t/tte) location <br/><em>(Ouvre une nouvelle fenêtre)</em>
+            edit: Modifier ce(t/tte) location
+            delete: Supprimer définitivement ce(t/tte) location
+      locations:
+        show:
+          other: Autres Locations
+  activerecord:
+    attributes:
+      'refinery/locations/location':
+        name: Name
+        description: Description
+        latitude: Latitude
+        longitude: Longitude

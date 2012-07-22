@@ -1,0 +1,31 @@
+es:
+  refinery:
+    plugins:
+      locations:
+        title: Locations
+#        article: masculino/femenino
+    locations:
+      admin:
+        locations:
+          actions:
+            create_new: Crear nuevo location
+            reorder: Reordenar locations
+            reorder_done: Reordenación de locations completada
+          records:
+            title: Locations
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay locations todavía. Pulsa en "Crear nuevo Location" para crear tu primer location.
+          location:
+            view_live_html: Ver este location como abierto al público <br/><em>(abre en ventana nueva)</em>
+            edit: Editar este location
+            delete: Borrar este location para siempre
+      locations:
+        show:
+          other: Otros locations
+  activerecord:
+    attributes:
+      'refinery/locations/location':
+        name: Name
+        description: Description
+        latitude: Latitude
+        longitude: Longitude

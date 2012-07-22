@@ -1,0 +1,30 @@
+nb:
+  refinery:
+    plugins:
+      locations:
+        title: Locations
+    locations:
+      admin:
+        locations:
+          actions:
+            create_new: Lag en ny Location
+            reorder: Endre rekkefølgen på Locations
+            reorder_done: Ferdig å endre rekkefølgen Locations
+          records:
+            title: Locations
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Locations enda. Klikk på "Lag en ny Location" for å legge til din første location.
+          location:
+            view_live_html: Vis hvordan denne location ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+            edit: Rediger denne location
+            delete: Fjern denne location permanent
+      locations:
+        show:
+          other: Andre Locations
+  activerecord:
+    attributes:
+      'refinery/locations/location':
+        name: Name
+        description: Description
+        latitude: Latitude
+        longitude: Longitude

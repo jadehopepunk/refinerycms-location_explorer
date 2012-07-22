@@ -1,0 +1,30 @@
+en:
+  refinery:
+    plugins:
+      locations:
+        title: Locations
+    locations:
+      admin:
+        locations:
+          actions:
+            create_new: Add New Location
+            reorder: Reorder Locations
+            reorder_done: Done Reordering Locations
+          records:
+            title: Locations
+            sorry_no_results: Sorry! There are no results found.
+            no_items_yet: There are no Locations yet. Click "Add New Location" to add your first location.
+          location:
+            view_live_html: View this location live <br/><em>(opens in a new window)</em>
+            edit: Edit this location
+            delete: Remove this location forever
+      locations:
+        show:
+          other: Other Locations
+  activerecord:
+    attributes:
+      'refinery/locations/location':
+        name: Name
+        description: Description
+        latitude: Latitude
+        longitude: Longitude

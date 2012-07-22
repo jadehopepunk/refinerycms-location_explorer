@@ -1,0 +1,70 @@
+.refinerycms-locations {
+#locations {
+    #locations_index_map {
+      border: 2px solid black;
+      height: 500px;
+      $radius: 10px;
+      -webkit-border-radius: $radius;
+      -moz-border-radius: $radius;
+      border-radius: $radius;
+    }
+  }
+
+  .map_sidebar {
+    position: relative;
+
+    .arrow {
+      border: 15px solid transparent;
+      border-right: 15px solid black;
+      width: 0px;
+      position: absolute;
+      top: 10px;
+      left: -30px;
+    }
+  }
+
+  .location_preview {
+    border: 2px solid #000000;
+    background-color: #1c1714;
+    color: #CCC;
+
+    h2.location_name {
+      color: #FFFFFF !important;
+      margin: 0;
+      background-color: black;
+      padding: 10px;
+    }
+
+    .location_content {
+      padding: 10px;
+
+      a {
+        color: #FFF;
+      }
+
+      .description_preview {
+        margin-bottom: 1em;
+      }
+
+      img.location_image {
+        border: 1px solid black !important;
+      }
+    }
+
+  }
+
+  #location_show {
+    #submenu {
+      display: none;
+    }
+    h1#body_content_title {
+      height: 26px;
+      line-height: 26px;
+      margin-bottom: 20px;
+    }
+    #submenu_container {
+      margin-top: 46px;
+    }
+  }  
+}
+  

@@ -1,0 +1,27 @@
+<%= semantic_form_for [refinery, :locations_admin, @location] do |f| -%>
+  <%= render '/refinery/admin/error_messages',
+              :object => @location,
+              :include_object_name => true %>
+
+  <%= f.inputs do %>
+    <%= f.input :name, :input_html => {:class => 'larger widest'} %>
+  <% end %>
+
+  <%= tabbed_fieldsets f, [
+    Refinery::Pages::Tab.new(:name => 'map', :partial => '/refinery/locations/admin/locations/map'),
+    :description,
+    Refinery::Pages::Tab.new(:name => 'images', :partial => '/refinery/admin/pages/tabs/images')
+  ] %>
+
+  <%= render '/refinery/admin/form_actions', :f => f,
+             :continue_editing => false,
+             :delete_title => t('delete', :scope => 'refinery.locations.admin.locations.location'),
+             :delete_confirmation => t('message', :scope => 'refinery.admin.delete', :title => @location.name) %>
+<% end -%>
+<% content_for :javascripts do %>
+  <script>
+    $(document).ready(function(){
+      page_options.init(false, '', '');
+    });
+  </script>
+<% end %>

@@ -1,0 +1,16 @@
+- content_for :body_content_title do
+  = @location.name
+
+- content_for :body do
+  %article.location
+    = render 'refinery/jquery_gallery/gallery', :page => @location
+
+    %section.description
+      - if @location.description.present?
+        %h3 Description
+        =raw @location.description
+
+
+.refinerycms-locations
+  #location_show
+    = render '/refinery/content_page'
